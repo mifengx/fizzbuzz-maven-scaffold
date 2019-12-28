@@ -5,12 +5,6 @@ public class Rover {
     private int latitude;
     private String direct;
 
-    public Rover(int longitude, int latitude, String direct) {
-        this.longitude = longitude;
-        this.latitude = latitude;
-        this.direct = direct;
-    }
-
     public Rover() {
 
     }
@@ -63,7 +57,7 @@ public class Rover {
         if (direct.equals("W")) {
             latitude -= 1;
         }
-        if (direct.equals("N")) {
+        if (direct.equals( "N")) {
             longitude += 1;
         }
         if (direct.equals("S")) {
