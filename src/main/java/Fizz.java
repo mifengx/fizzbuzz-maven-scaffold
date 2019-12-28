@@ -1,27 +1,29 @@
 public class Fizz {
     public static String compute(int n) {
-        if(n<0){
+        String s = "";
+        if (n < 0) {
             throw new IllegalArgumentException("wrong input");
         }
         if (n % 3 == 0) {
             if (n % 5 == 0) {
-                return "FizzBuzz";
+                s = "FizzBuzz";
             }
             if (n % 7 == 0) {
-                return "FizzWhizz";
+                s = "FizzWhizz";
             }
-            return "Fizz";
+            s = "Fizz";
         }
         if (n % 5 == 0) {
             if (n % 7 == 0) {
-                return "BuzzWhizz";
+                s = "BuzzWhizz";
             }
-            return "Buzz";
+            s = "Buzz";
         }
         if (n % 7 == 0) {
-            return "Whizz";
+            s = "Whizz";
         } else {
-            return String.valueOf(n);
+            s = String.valueOf(n);
         }
+        return s;
     }
 }
